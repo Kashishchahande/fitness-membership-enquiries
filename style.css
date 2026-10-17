@@ -4,16 +4,97 @@
 @media(max-width:900px){.nav{height:auto;min-height:80px;align-items:flex-start;padding:20px 0;flex-direction:column}.nav-links{flex-wrap:wrap;gap:12px}.hero-content{padding-top:75px}.hero-stats{gap:25px}.three-col{grid-template-columns:1fr 1fr}.schedule-grid{grid-template-columns:repeat(4,1fr)}.orb-one{right:-270px}.orb-two{right:-160px}}
 @media(max-width:620px){.container{width:min(100% - 30px,1120px)}.hero{min-height:650px}.hero-content{padding-top:65px}.hero h1{font-size:3rem}.hero-subtitle{font-size:1rem}.hero-stats{margin-top:55px;gap:16px;flex-wrap:wrap}.hero-stats strong{font-size:1.3rem}.hero-stats span{font-size:.7rem}.two-col,.three-col,.suggestion-list,.ad-layout{grid-template-columns:1fr}.section{padding-top:48px}.card,.social-card{padding:19px}.detail-list div{grid-template-columns:105px 1fr}.schedule-grid{grid-template-columns:repeat(2,1fr)}.ad-poster{min-height:440px;max-width:400px;width:100%;margin:auto}.ad-poster h3{font-size:3.1rem}.email-body{padding:22px}.email-body h3{font-size:1.6rem}.final-cta{padding:28px 22px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-meta{align-items:flex-start}.nav-links{font-size:.72rem}.orb-one{top:200px}.orb-two{top:280px}}
 
+/* ===== LIGHT THEME: FitLife Fitness Centre ===== */
+:root{
+  --bg:#f5f7fa;
+  --panel:#ffffff;
+  --panel2:#eef2f6;
+  --text:#172033;
+  --muted:#586579;
+  --accent:#ffd21f;
+  --line:#dce3eb;
+  --ink:#172033;
+}
+body{background:#f5f7fa;color:#172033}
+.hero{background:radial-gradient(ellipse at 78% 30%,#fff1a6 0%,#f7f8fa 34%,#edf1f5 75%)}
+.nav{border-bottom-color:#dce3eb}
+.nav-links{color:#475569}
+.nav-links a:hover{color:#9a7200}
+.eyebrow,.hero h1 span,.final-cta h2 span{color:#b88900}
+.hero-subtitle,.section-intro,.card p,.social-card p,.ad-copy p,.final-cta p:not(.eyebrow){color:#586579}
+.hero-stats strong{color:#b88900}
+.hero-stats span{color:#64748b}
+.hero-orb{border-color:#d4a90030}
+.orb-one{box-shadow:0 0 0 45px #d4a90008,0 0 0 90px #d4a90006}
+.orb-two{background:linear-gradient(140deg,#ffd21f30,#ffd21f00);border-color:#d4a90045}
+.button{background:#ffd21f;color:#172033}
+.section{border-bottom-color:#dce3eb}
+.card,.social-card,.suggestion-list article{background:#fff;border-color:#dce3eb;box-shadow:0 5px 18px #17203308}
+.card-label,.preview-tag{color:#9a7200}
+.detail-list{border-top-color:#dce3eb}
+.detail-list div{border-bottom-color:#dce3eb}
+.note{color:#5e4b00!important;background:#fff8d6;border-left-color:#d5a900}
+.check-list li:before{color:#9a7200}
+th{color:#775900;background:#fff1a8}
+th,td{border-bottom-color:#dce3eb}
+td{color:#475569}
+tbody tr:hover{background:#f8fafc}
+.chips span,.pill{border-color:#d4dce5;color:#475569;background:#fff}
+.social-top{color:#475569}
+.social-icon{background:#ffd21f;color:#172033}
+.post-preview,.facebook .post-preview,.whatsapp .post-preview{background:linear-gradient(145deg,#fff8d6,#f2f5f8);border-color:#e1e6ed}
+.post-preview p{color:#475569}
+.post-preview strong{color:#8a6800}
+.outline-button{border-color:#cbd5e1;color:#334155}
+.outline-button:hover{border-color:#d4a900;color:#8a6800}
+.schedule-grid div{background:#fff;border:1px solid #dce3eb}
+.schedule-grid b{color:#9a7200}
+.schedule-grid span{color:#586579}
+.ad-poster{background:#ffd21f;color:#172033;box-shadow:12px 12px 0 #e5eaf0}
+.ad-poster h3 em{color:#fff9d8;-webkit-text-stroke:1px #172033}
+.ad-copy p{color:#586579}
+.final-cta{background:linear-gradient(120deg,#fff7d6,#ffffff);border-color:#e6d68b}
+footer{background:#eef2f6;border-top-color:#dce3eb}
+.footer-inner p,.footer-meta{color:#64748b}
+.toast{background:#ffd21f;color:#172033}
+@media(prefers-color-scheme:dark){body{background:#f5f7fa;color:#172033}}
 
-/* Advertisement banner: preserves FitLife's original charcoal + lime theme */
-.ad-banner{position:relative;min-height:350px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:34px 28px;background:radial-gradient(ellipse at 50% 0%,#303b20 0%,#191f19 48%,#101416 100%);border:1px solid #53612b;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(213,255,56,.08)}
-.ad-banner:before{content:"";position:absolute;inset:12px;border:1px dashed rgba(213,255,56,.48);border-radius:12px;pointer-events:none}
-.ad-banner .ad-topline{position:relative;color:var(--accent);letter-spacing:.22em;font-size:.78rem;font-weight:700;margin-bottom:14px}
-.ad-banner .ad-small{position:relative;color:#dce6c7;letter-spacing:.13em;font-size:.76rem;font-weight:700;margin:0 0 10px}
-.ad-banner h3{position:relative;color:#f5f7f1;font-size:clamp(1.9rem,4vw,3.15rem);line-height:1.12;margin:0 0 12px;font-family:'Space Grotesk',sans-serif}
-.ad-banner h3 em{font-style:normal;color:var(--accent)}
-.ad-banner-copy{position:relative;max-width:620px;color:#c4cbc0;margin:0 auto 20px}
-.ad-banner .ad-offer{position:relative;background:var(--accent);color:#14180f;border-radius:999px;padding:12px 24px;font-size:.85rem;letter-spacing:.04em}
-.ad-banner .ad-offer strong{display:inline}
-.ad-banner .ad-footer{position:relative;color:var(--accent);font-size:.75rem;letter-spacing:.1em;font-weight:700;margin-top:20px}
-@media(max-width:600px){.ad-banner{padding:30px 18px;min-height:320px}.ad-banner .ad-offer{line-height:1.5;border-radius:14px}.ad-banner .ad-topline{letter-spacing:.12em}}
+
+/* White + yellow theme refresh: preserve the original website layout */
+:root{--bg:#ffffff;--panel:#ffffff;--panel2:#fff9e6;--text:#202124;--muted:#656a70;--accent:#ffd22f;--line:#e8e4d8;--ink:#171717}
+body{background:#fff;color:#202124}
+.hero{background:radial-gradient(ellipse at 78% 30%,#fff0a8 0%,#fff9e5 32%,#ffffff 72%)}
+.nav{border-bottom:1px solid #e9e3d1}
+.nav-links{color:#53565b}.nav-links a:hover{color:#a87900}
+.hero h1{color:#171717}.hero-subtitle{color:#555b61}
+.hero-stats span{color:#555b61}
+.hero-orb{border-color:#e5b90035}.orb-one{box-shadow:0 0 0 45px #ffd22f12,0 0 0 90px #ffd22f0a}.orb-two{background:linear-gradient(140deg,#ffd22f42,#ffd22f00);border-color:#e5b90055}
+.section{border-bottom-color:var(--line)}
+.card,.social-card{box-shadow:0 8px 28px #24242408}
+.dark-card{background:#fff0a8;color:#202124;border-color:#f0d65c}.dark-card .eyebrow{color:#7a5b00}.dark-card h3{color:#171717}.dark-card p,.dark-card li{color:#4f4a35}
+.check-list li:before{color:#b78b00}
+.table-wrap{border-color:var(--line)}th{color:#28220b;background:#fff0a8}td{color:#4e5257}tbody tr:hover{background:#fffaf0}
+.chips span,.pill{background:#fff4c7;color:#554300;border:1px solid #f0dc7e}
+.social-card{background:#fff;border-color:#e8e4d8}.post-preview{background:#fff9e9;border:1px solid #f0e6be}.preview-tag{color:#9a7400}
+.outline-button{border:1px solid #e0bc28;color:#4a3b00;background:#fffdf5}.outline-button:hover{background:#fff0a8}
+.schedule-card,.email-card{background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px #24242408}
+.email-header{background:#fff0a8;color:#29230d}.email-body{background:#fff;color:#444}.email-subject{background:#fff9e7}.email-benefits span{background:#fff5ce;color:#4c400c}
+.suggestion-list article{border-bottom:1px solid var(--line)}.suggestion-list article>span{background:#fff0a8;color:#352a00}.suggestion-list p{color:var(--muted)}
+.final-cta{background:#fff5cf;border:1px solid #f1df93;color:#202124}.final-cta h2 span{color:#9a7400}.final-cta p:not(.eyebrow){color:#555b61}
+footer{background:#fffaf0;border-top:1px solid var(--line)}.footer-inner p,.footer-meta{color:#62666b}
+.note{color:#655000!important;background:#fff8d9;border-left-color:#e6bd19}
+/* Advertisement poster: promotional creative in the same white/yellow brand palette */
+.ad-layout{align-items:stretch;gap:26px}
+.ad-poster{position:relative;isolation:isolate;overflow:hidden;min-height:490px;padding:25px 27px 24px;border-radius:16px;color:#fff;background:linear-gradient(90deg,rgba(18,18,18,.88) 0%,rgba(18,18,18,.66) 54%,rgba(18,18,18,.2) 100%),url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85') center/cover no-repeat;box-shadow:0 16px 38px #1d1d1d20;display:flex;flex-direction:column;align-items:flex-start}
+.ad-poster:before{content:'FIT';position:absolute;right:-15px;top:80px;font-family:'Space Grotesk',sans-serif;font-size:10rem;font-weight:700;line-height:1;color:#ffd22f22;z-index:-1;letter-spacing:-.08em}
+.ad-topline{font-size:.72rem;letter-spacing:.17em;font-weight:800;color:#ffe16a;border-bottom:1px solid #ffffff55;padding-bottom:13px;width:100%}
+.ad-silhouette{display:none}
+.ad-small{margin:32px 0 8px;font-size:.72rem;font-weight:800;letter-spacing:.18em;color:#ffe16a}
+.ad-poster h3{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.5rem,5vw,4.2rem);line-height:.93;letter-spacing:-.055em;margin:0 0 23px;color:#fff}
+.ad-poster h3 em{font-style:normal;color:#ffd22f}
+.ad-offer{border-left:5px solid #ffd22f;padding:8px 0 8px 13px;font-size:.78rem;line-height:1.5;letter-spacing:.08em;color:#fff}
+.ad-offer strong{font-size:1.05rem;color:#ffd22f}
+.ad-footer{margin-top:auto;padding-top:23px;font-size:.75rem;font-weight:800;letter-spacing:.09em;color:#171717;background:#ffd22f;padding:12px 14px;border-radius:4px}
+.ad-copy{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:0 8px 28px #24242408}
+.ad-copy h3{color:#202124}.ad-copy p{color:#5b6066}
+@media(max-width:760px){.ad-poster{min-height:440px}.ad-poster h3{font-size:3rem}.hero-stats{gap:24px}.nav-links{flex-wrap:wrap;justify-content:flex-end;gap:9px;font-size:.7rem}}
