@@ -14,6 +14,3 @@ Open `index.html` in a web browser.
 
 ## Publish with GitHub Pages
 Upload/replace `index.html`, `style.css`, `script.js`, and `README.md` in the root of your GitHub repository, commit the changes to `main`, and ensure GitHub Pages is configured to deploy from `main` / `/(root)`.
-
-
-Design update: the existing website sections and navigation are preserved. The visual theme is refreshed to white and yellow, and the Advertisement Design section uses a photo-led gym poster style. The poster photo loads from Unsplash and therefore needs an internet connection.
