@@ -1,8 +1,16 @@
-// Small interaction: mark the selected navigation section.
-const navLinks = document.querySelectorAll('.nav a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(item => item.classList.remove('active'));
-    link.classList.add('active');
+const toast = document.getElementById('toast');
+let toastTimer;
+document.querySelectorAll('[data-copy]').forEach(button => {
+  button.addEventListener('click', async () => {
+    const text = button.getAttribute('data-copy');
+    try {
+      await navigator.clipboard.writeText(text);
+      toast.textContent = 'Sample text copied!';
+    } catch (error) {
+      toast.textContent = text;
+    }
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 2400);
   });
 });
